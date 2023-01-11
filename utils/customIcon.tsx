@@ -9,10 +9,10 @@ import {
 import { Icon, Text } from "@chakra-ui/react";
 
 export const UpIcon = () => {
-  return <FaCaretUp color="success.100" />;
+  return <Icon as={FaCaretUp} color="success.100" />;
 };
 export const DownIcon = () => {
-  return <FaCaretDown color="error.100" />;
+  return <Icon as={FaCaretDown} color="error.100" />;
 };
 
 export const SMDFacebookIcon = () => {

@@ -19,7 +19,7 @@ const SMDIconUsername = ({
       {facebook ? (
         <Flex alignItems="center" gap={2}>
           <SMDFacebookIcon />
-          <Text as="small" color={useColorModeValue("light.400", "dark.400")}>
+          <Text as="small" color="light.400" _dark={{color:"dark.400"}}>
             @nathanf
           </Text>
         </Flex>
@@ -30,7 +30,10 @@ const SMDIconUsername = ({
       {twitter ? (
         <Flex alignItems="center" gap={2}>
           <SMDTwitterIcon />
-          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>@nathanf</Text>
+                    <Text as="small" color="light.400" _dark={{color:"dark.400"}}>
+
+            @nathanf
+          </Text>
         </Flex>
       ) : (
         ""
@@ -39,7 +42,10 @@ const SMDIconUsername = ({
       {instagram ? (
         <Flex alignItems="center" gap={2}>
           <SMDInstagramIcon />
-          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>@realnathanf</Text>
+                    <Text as="small" color="light.400" _dark={{color:"dark.400"}}>
+
+            @realnathanf
+          </Text>
         </Flex>
       ) : (
         ""
@@ -48,7 +54,10 @@ const SMDIconUsername = ({
       {youtube ? (
         <Flex alignItems="center" gap={2}>
           <SMDYoutubeIcon />
-          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>Nathan F.</Text>
+                    <Text as="small" color="light.400" _dark={{color:"dark.400"}}>
+
+            Nathan F.
+          </Text>
         </Flex>
       ) : (
         ""

@@ -1,22 +1,13 @@
 import {
-  Box,
   Flex,
   Heading,
   Icon,
   Text,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import React from "react";
-import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
 import { data, OverviewProps } from "../../containers/Homepage/Overview";
-
-export const UpIcon = () => {
-  return <FaCaretUp color="success.100" />;
-};
-export const DownIcon = () => {
-  return <FaCaretDown color="error.100" />;
-};
+import { DownIcon, UpIcon } from "../../utils/customIcon";
 
 const SMDNumberPercentage = ({ noAction, noPercent, red }: OverviewProps) => {
   return (
