@@ -6,9 +6,14 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import React from "react";
-import { Props } from "../../containers/Homepage/Summary";
+import { SummaryProps } from "../../containers/Homepage/Summary";
 
-const SMDIconUsername = ({ facebook, instagram, youtube, twitter }: Props) => {
+const SMDIconUsername = ({
+  facebook,
+  instagram,
+  youtube,
+  twitter,
+}: SummaryProps) => {
   return (
     <Box>
       {facebook ? (

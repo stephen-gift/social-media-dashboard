@@ -2,7 +2,7 @@ import { Box, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import { SMDSummaryCard } from "../../../components";
 
-export type Props = {
+export type SummaryProps = {
   facebook?: any;
   instagram?: any;
   youtube?: any;

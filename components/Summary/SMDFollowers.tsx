@@ -1,13 +1,13 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-import { data, Props } from "../../containers/Homepage/Summary";
+import { data, SummaryProps } from "../../containers/Homepage/Summary";
 
 const SMDFollowers = ({
   followers,
   subscribers,
   noFollowers,
   noSubscribers,
-}: Props) => {
+}: SummaryProps) => {
   return (
     <>
       {data.map((d) => {
@@ -19,17 +19,16 @@ const SMDFollowers = ({
                 <Text as="small">FOLLOWERS</Text>
               </Flex>
             ) : (
-              ""
-            )}
-
-            {subscribers ? (
               <Flex flexDir="column" alignItems="center">
                 <Heading>{noSubscribers}</Heading>
                 <Text as="small">SUBSCRIBERS</Text>
               </Flex>
+            )}
+
+            {/* {subscribers ? (
             ) : (
               ""
-            )}
+            )} */}
           </Box>
         );
       })}
