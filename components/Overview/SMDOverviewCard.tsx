@@ -2,6 +2,7 @@ import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { OverviewProps } from "../../containers/Homepage/Overview";
 import SMDActionIcon from "./SMDActionIcon";
+import SMDNumberPercentage from "./SMDNumberPercentage";
 
 const SMDOverviewCard = ({
   topAction,
@@ -9,6 +10,9 @@ const SMDOverviewCard = ({
   instagram,
   youtube,
   twitter,
+  red,
+  noAction,
+  noPercent,
 }: OverviewProps) => {
   return (
     <Flex
@@ -18,12 +22,20 @@ const SMDOverviewCard = ({
       bgColor={useColorModeValue("hsl(227, 47%, 96%)", "hsl(228, 28%, 20%)")}
       borderRadius="lg"
       p={5}
+      gap={3}
     >
       <Box>
         {facebook && <SMDActionIcon topAction={topAction} facebook />}
         {instagram && <SMDActionIcon topAction={topAction} instagram />}
         {youtube && <SMDActionIcon topAction={topAction} youtube />}
         {twitter && <SMDActionIcon topAction={topAction} twitter />}
+      </Box>
+      <Box>
+        {red ? (
+          <SMDNumberPercentage red noAction={noAction} noPercent={noPercent} />
+        ) : (
+          <SMDNumberPercentage noAction={noAction} noPercent={noPercent} />
+        )}
       </Box>
     </Flex>
   );

@@ -25,14 +25,57 @@ const SMDOverview = () => {
         <Heading>Overview - Today</Heading>
 
         <SimpleGrid columns={4} w="full" spacing={5}>
-          <SMDOverviewCard topAction={d.topAction.fbPV} facebook />
-          <SMDOverviewCard topAction={d.topAction.fbLikes} facebook />
-          <SMDOverviewCard topAction={d.topAction.igLikes} instagram />
-          <SMDOverviewCard topAction={d.topAction.igPV} instagram />
-          <SMDOverviewCard topAction={d.topAction.twRe} twitter />
-          <SMDOverviewCard topAction={d.topAction.twLikes} twitter />
-          <SMDOverviewCard topAction={d.topAction.ytLikes} youtube />
-          <SMDOverviewCard topAction={d.topAction.ytTV} youtube />
+          <SMDOverviewCard
+            topAction={d.topAction.fbPV}
+            facebook
+            noAction={d.noAction.fbPV}
+            noPercent={d.noPercent.fbPV}
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.fbLikes}
+            facebook
+            noAction={d.noAction.fbLikes}
+            noPercent={d.noPercent.fbLikes}
+            red
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.igLikes}
+            instagram
+            noAction={d.noAction.igLikes}
+            noPercent={d.noPercent.igLikes}
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.igPV}
+            instagram
+            noAction={d.noAction.igPV}
+            noPercent={d.noPercent.igPV}
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.twRe}
+            twitter
+            noAction={d.noAction.twRe}
+            noPercent={d.noPercent.twRe}
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.twLikes}
+            twitter
+            noAction={d.noAction.twLikes}
+            noPercent={d.noPercent.twLikes}
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.ytLikes}
+            youtube
+            noAction={d.noAction.ytLikes}
+            noPercent={d.noPercent.ytLikes}
+            red
+          />
+          <SMDOverviewCard
+            topAction={d.topAction.ytTV}
+            youtube
+            noAction={d.noAction.ytTV}
+            noPercent={d.noPercent.ytTV}
+            red
+          />
         </SimpleGrid>
       </VStack>
     );
