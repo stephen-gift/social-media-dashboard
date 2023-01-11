@@ -18,10 +18,14 @@ const SMDSummaryCard = ({
   noToday,
 }: SummaryProps) => {
   return (
-    <Square
-      size="250px"
+    <Flex
+      w="100%"
+      minW="300px"
       bgColor={useColorModeValue("hsl(227, 47%, 96%)", "hsl(228, 28%, 20%)")}
       borderRadius="lg"
+      p={14}
+      alignItems="center"
+      justifyContent="center"
     >
       <Flex
         flexDir="column"
@@ -56,7 +60,7 @@ const SMDSummaryCard = ({
           )}
         </Box>
       </Flex>
-    </Square>
+    </Flex>
   );
 };
 

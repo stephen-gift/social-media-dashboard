@@ -1,12 +1,12 @@
-import { Box, Flex, Text, Icon } from "@chakra-ui/react";
-import {
-  FaFacebookSquare,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { Flex, Text, Icon } from "@chakra-ui/react";
 import React from "react";
 import { data, OverviewProps } from "../../containers/Homepage/Overview";
+import {
+  SMDFacebookIcon,
+  SMDInstagramIcon,
+  SMDTwitterIcon,
+  SMDYoutubeIcon,
+} from "../../utils/customIcon";
 
 const SMDActionIcon = ({
   topAction,
@@ -26,10 +26,10 @@ const SMDActionIcon = ({
             w="full"
           >
             <Text>{topAction}</Text>
-            {facebook && <Icon as={FaFacebookSquare} color="blue.200" />}
-            {instagram && <Icon as={FaTwitter} color="blue.200" />}
-            {youtube && <Icon as={FaInstagram} color="blue.200" />}
-            {twitter && <Icon as={FaYoutube} color="blue.200" />}
+            {facebook && <SMDFacebookIcon />}
+            {twitter && <SMDTwitterIcon />}
+            {instagram && <SMDInstagramIcon />}
+            {youtube && <SMDYoutubeIcon />}
           </Flex>
         );
       })}

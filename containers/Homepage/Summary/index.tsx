@@ -36,7 +36,7 @@ const SMDSummary = () => {
     <>
       {data.map((d) => {
         return (
-          <SimpleGrid key={d.id} columns={4} spacing={3}>
+          <SimpleGrid key={d.id} columns={4} spacing={6}>
             <SMDSummaryCard
               facebook
               followers
