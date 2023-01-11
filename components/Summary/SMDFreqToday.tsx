@@ -1,14 +1,6 @@
-import { Box, Flex, Icon, Text } from "@chakra-ui/react";
-import { FaCaretDown, FaCaretUp } from "react-icons/fa";
-import React from "react";
+import { Flex, Icon, Text } from "@chakra-ui/react";
 import { SummaryProps } from "../../containers/Homepage/Summary";
-
-export const UpIcon = () => {
-  return <FaCaretUp color="hsl(163, 72%, 41%)" />;
-};
-export const DownIcon = () => {
-  return <FaCaretDown color="hsl(356, 69%, 56%)" />;
-};
+import { DownIcon, UpIcon } from "../../utils/customIcon";
 
 const SMDFreqToday = ({ red, noToday }: SummaryProps) => {
   return (

@@ -1,12 +1,12 @@
 import { Box, Flex, Icon, Text } from "@chakra-ui/react";
-import {
-  FaFacebookSquare,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
 import React from "react";
 import { SummaryProps } from "../../containers/Homepage/Summary";
+import {
+  SMDFacebookIcon,
+  SMDInstagramIcon,
+  SMDTwitterIcon,
+  SMDYoutubeIcon,
+} from "../../utils/customIcon";
 
 const SMDIconUsername = ({
   facebook,
@@ -18,7 +18,7 @@ const SMDIconUsername = ({
     <Box>
       {facebook ? (
         <Flex alignItems="center" gap={2}>
-          <Icon as={FaFacebookSquare} color="blue.200" />
+          <SMDFacebookIcon />
           <Text as="small">@nathanf</Text>
         </Flex>
       ) : (
@@ -27,7 +27,7 @@ const SMDIconUsername = ({
 
       {twitter ? (
         <Flex alignItems="center" gap={2}>
-          <Icon as={FaTwitter} color="blue.200" />
+          <SMDTwitterIcon />
           <Text as="small">@nathanf</Text>
         </Flex>
       ) : (
@@ -36,7 +36,7 @@ const SMDIconUsername = ({
 
       {instagram ? (
         <Flex alignItems="center" gap={2}>
-          <Icon as={FaInstagram} color="blue.200" />
+          <SMDInstagramIcon />
           <Text as="small">@realnathanf</Text>
         </Flex>
       ) : (
@@ -45,7 +45,7 @@ const SMDIconUsername = ({
 
       {youtube ? (
         <Flex alignItems="center" gap={2}>
-          <Icon as={FaYoutube} color="blue.200" />
+          <SMDYoutubeIcon />
           <Text as="small">Nathan F.</Text>
         </Flex>
       ) : (
