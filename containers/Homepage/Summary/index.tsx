@@ -62,7 +62,6 @@ const SMDSummary = () => {
               red
               noToday={d.noToday.yt}
             />
-            SMDSummary
           </SimpleGrid>
         );
       })}
