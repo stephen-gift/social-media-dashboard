@@ -1,4 +1,4 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Flex } from "@chakra-ui/react";
 import React from "react";
 import SMDHeader from "./Header";
 import SMDOverview from "./Overview";
@@ -8,9 +8,11 @@ const SMDHomepageContainer = () => {
   return (
     <Box>
       <Container maxW="container.xl">
-        <SMDHeader />
-        {/* <SMDSummary /> */}
-        {/* <SMDOverview /> */}
+        <Flex flexDir="column" gap={9}>
+          <SMDHeader />
+          <SMDSummary />
+          {/* <SMDOverview /> */}
+        </Flex>
       </Container>
     </Box>
   );
