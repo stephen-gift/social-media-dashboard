@@ -1,7 +1,14 @@
+import { Flex } from "@chakra-ui/react";
 import React from "react";
+import { SMDColorModeToggle, SMDHeaderText } from "../../../components";
 
 const SMDHeader = () => {
-  return <div>SMDHeader</div>;
+  return (
+    <Flex justifyContent="space-between" alignItems="center">
+      <SMDHeaderText />
+      <SMDColorModeToggle />
+    </Flex>
+  );
 };
 
 export default SMDHeader;
