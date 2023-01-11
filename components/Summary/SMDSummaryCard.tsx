@@ -11,10 +11,12 @@ const SMDSummaryCard = ({ facebook, instagram, youtube, twitter }: Props) => {
       borderRadius="lg"
     >
       <Flex flexDir="column" alignItems="center" justifyContent="center">
-        {facebook ? <SMDIconUsername facebook /> : ""}
-        {twitter ? <SMDIconUsername twitter /> : ""}
-        {instagram ? <SMDIconUsername instagram /> : ""}
-        {youtube ? <SMDIconUsername youtube /> : ""}
+        <Box>
+          {facebook ? <SMDIconUsername facebook /> : ""}
+          {twitter ? <SMDIconUsername twitter /> : ""}
+          {instagram ? <SMDIconUsername instagram /> : ""}
+          {youtube ? <SMDIconUsername youtube /> : ""}
+        </Box>
 
         <Box>HI</Box>
         <Box>HI</Box>
