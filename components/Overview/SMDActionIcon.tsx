@@ -1,4 +1,4 @@
-import { Flex, Text, Icon } from "@chakra-ui/react";
+import { Flex, Text, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { data, OverviewProps } from "../../containers/Homepage/Overview";
 import {
@@ -24,6 +24,8 @@ const SMDActionIcon = ({
             justifyContent="space-between"
             alignItems="center"
             w="full"
+            color="light.400"
+            _dark={{ color: "dark.400" }}
           >
             <Text>{topAction}</Text>
             {facebook && <SMDFacebookIcon />}

@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { SummaryProps } from "../../containers/Homepage/Summary";
 import {
@@ -19,7 +19,9 @@ const SMDIconUsername = ({
       {facebook ? (
         <Flex alignItems="center" gap={2}>
           <SMDFacebookIcon />
-          <Text as="small">@nathanf</Text>
+          <Text as="small" color={useColorModeValue("light.400", "dark.400")}>
+            @nathanf
+          </Text>
         </Flex>
       ) : (
         ""
@@ -28,7 +30,7 @@ const SMDIconUsername = ({
       {twitter ? (
         <Flex alignItems="center" gap={2}>
           <SMDTwitterIcon />
-          <Text as="small">@nathanf</Text>
+          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>@nathanf</Text>
         </Flex>
       ) : (
         ""
@@ -37,7 +39,7 @@ const SMDIconUsername = ({
       {instagram ? (
         <Flex alignItems="center" gap={2}>
           <SMDInstagramIcon />
-          <Text as="small">@realnathanf</Text>
+          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>@realnathanf</Text>
         </Flex>
       ) : (
         ""
@@ -46,7 +48,7 @@ const SMDIconUsername = ({
       {youtube ? (
         <Flex alignItems="center" gap={2}>
           <SMDYoutubeIcon />
-          <Text as="small">Nathan F.</Text>
+          <Text as="small"color={useColorModeValue("light.400", "dark.400")}>Nathan F.</Text>
         </Flex>
       ) : (
         ""

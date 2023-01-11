@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { data, SummaryProps } from "../../containers/Homepage/Summary";
 
@@ -15,13 +15,27 @@ const SMDFollowers = ({
           <Box key={d.id}>
             {followers ? (
               <Flex flexDir="column" alignItems="center">
-                <Heading>{noFollowers}</Heading>
-                <Text as="small">FOLLOWERS</Text>
+                <Heading color={useColorModeValue("light.500", "dark.500")}>
+                  {noFollowers}
+                </Heading>
+                <Text
+                  as="small"
+                  color={useColorModeValue("light.400", "dark.400")}
+                >
+                  FOLLOWERS
+                </Text>
               </Flex>
             ) : (
               <Flex flexDir="column" alignItems="center">
-                <Heading>{noSubscribers}</Heading>
-                <Text as="small">SUBSCRIBERS</Text>
+                <Heading color={useColorModeValue("light.500", "dark.500")}>
+                  {noSubscribers}
+                </Heading>
+                <Text
+                  as="small"
+                  color={useColorModeValue("light.400", "dark.400")}
+                >
+                  SUBSCRIBERS
+                </Text>
               </Flex>
             )}
 

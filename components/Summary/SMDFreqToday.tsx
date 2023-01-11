@@ -7,16 +7,10 @@ const SMDFreqToday = ({ red, noToday }: SummaryProps) => {
     <>
       <Flex alignItems="center" gap={1}>
         <Icon as={red ? DownIcon : UpIcon} />
-        <Text
-          as="small"
-          color={red ? "hsl(356, 69%, 56%)" : "hsl(163, 72%, 41%)"}
-        >
+        <Text as="small" color={red ? "error.100" : "success.100"}>
           {noToday}
         </Text>
-        <Text
-          as="small"
-          color={red ? "hsl(356, 69%, 56%)" : "hsl(163, 72%, 41%)"}
-        >
+        <Text as="small" color={red ? "error.100" : "success.100"}>
           Today
         </Text>
       </Flex>

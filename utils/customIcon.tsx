@@ -9,10 +9,10 @@ import {
 import { Icon, Text } from "@chakra-ui/react";
 
 export const UpIcon = () => {
-  return <FaCaretUp color="hsl(163, 72%, 41%)" />;
+  return <FaCaretUp color="success.100" />;
 };
 export const DownIcon = () => {
-  return <FaCaretDown color="hsl(356, 69%, 56%)" />;
+  return <FaCaretDown color="error.100" />;
 };
 
 export const SMDFacebookIcon = () => {
@@ -30,11 +30,5 @@ export const SMDInstagramIcon = () => {
   );
 };
 export const SMDYoutubeIcon = () => {
-
-
-
-  
   return <Icon as={FaYoutube} color="youtube.100" />;
 };
-
-
