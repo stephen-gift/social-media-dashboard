@@ -4,12 +4,7 @@ import {
   SMDOverviewCard,
   SMDNumberPercentage,
 } from "./Overview";
-import {
-  SMDFollowers,
-  SMDSubscribers,
-  SMDSummaryCard,
-  SMDIconUsername,
-} from "./Summary";
+import { SMDFollowers, SMDSummaryCard, SMDIconUsername } from "./Summary";
 
 export {
   SMDHeaderText,
@@ -18,7 +13,6 @@ export {
   SMDOverviewCard,
   SMDNumberPercentage,
   SMDFollowers,
-  SMDSubscribers,
   SMDSummaryCard,
   SMDIconUsername,
 };
