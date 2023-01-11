@@ -21,7 +21,7 @@ const SMDSummaryCard = ({
     <Flex
       w="100%"
       minW="300px"
-      bgColor={useColorModeValue("hsl(227, 47%, 96%)", "hsl(228, 28%, 20%)")}
+      bgColor={useColorModeValue("light.300", "dark.300")}
       borderRadius="lg"
       p={14}
       alignItems="center"
