@@ -11,7 +11,7 @@ const SMDHomepageContainer = () => {
         <Flex flexDir="column" gap={9}>
           <SMDHeader />
           <SMDSummary />
-          {/* <SMDOverview /> */}
+          <SMDOverview />
         </Flex>
       </Container>
     </Box>
