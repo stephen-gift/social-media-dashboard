@@ -11,6 +11,8 @@ export type SummaryProps = {
   subscribers?: any;
   noFollowers?: string | number | any;
   noSubscribers?: string | number | any;
+  red?: any;
+  noToday?: string | number;
 };
 
 export const data = [
@@ -20,6 +22,12 @@ export const data = [
     twitter: "1044",
     instagram: "11k",
     youtube: "8239",
+    noToday: {
+      fb: "12",
+      tw: "99",
+      ig: "1099",
+      yt: "144",
+    },
   },
 ];
 
@@ -29,10 +37,31 @@ const SMDSummary = () => {
       {data.map((d) => {
         return (
           <SimpleGrid key={d.id} columns={4} spacing={3}>
-            <SMDSummaryCard facebook followers noFollowers={d.facebook} />
-            <SMDSummaryCard twitter followers noFollowers={d.twitter} />
-            <SMDSummaryCard instagram followers noFollowers={d.instagram} />
-            <SMDSummaryCard youtube subscribers noSubscribers={d.youtube} />
+            <SMDSummaryCard
+              facebook
+              followers
+              noFollowers={d.facebook}
+              noToday={d.noToday.fb}
+            />
+            <SMDSummaryCard
+              twitter
+              followers
+              noFollowers={d.twitter}
+              noToday={d.noToday.tw}
+            />
+            <SMDSummaryCard
+              instagram
+              followers
+              noFollowers={d.instagram}
+              noToday={d.noToday.ig}
+            />
+            <SMDSummaryCard
+              youtube
+              subscribers
+              noSubscribers={d.youtube}
+              red
+              noToday={d.noToday.yt}
+            />
             SMDSummary
           </SimpleGrid>
         );

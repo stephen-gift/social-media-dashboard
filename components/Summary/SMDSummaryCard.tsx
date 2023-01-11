@@ -2,6 +2,7 @@ import { Box, Flex, Square, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { SummaryProps } from "../../containers/Homepage/Summary";
 import SMDFollowers from "./SMDFollowers";
+import SMDFreqToday from "./SMDFreqToday";
 import SMDIconUsername from "./SMDIconUsername";
 
 const SMDSummaryCard = ({
@@ -13,6 +14,8 @@ const SMDSummaryCard = ({
   subscribers,
   noFollowers,
   noSubscribers,
+  red,
+  noToday,
 }: SummaryProps) => {
   return (
     <Square
@@ -45,7 +48,13 @@ const SMDSummaryCard = ({
             ""
           )} */}
         </Box>
-        <Box>HI</Box>
+        <Box>
+          {red ? (
+            <SMDFreqToday red noToday={noToday} />
+          ) : (
+            <SMDFreqToday noToday={noToday} />
+          )}
+        </Box>
       </Flex>
     </Square>
   );
