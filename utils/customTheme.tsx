@@ -1,5 +1,13 @@
 import { mode } from "@chakra-ui/theme-tools";
-import { Colors, extendTheme, StyleProps, ThemeConfig } from "@chakra-ui/react";
+import {
+  Colors,
+  extendTheme,
+  StyleProps,
+  ThemeConfig,
+  createMultiStyleConfigHelpers,
+} from "@chakra-ui/react";
+
+import { switchAnatomy } from "@chakra-ui/anatomy";
 
 export const colors: Colors = {
   light: {
@@ -64,9 +72,6 @@ const styles = {
     },
   }),
 };
-
-import { switchAnatomy } from "@chakra-ui/anatomy";
-import { createMultiStyleConfigHelpers } from "@chakra-ui/react";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(switchAnatomy.keys);
