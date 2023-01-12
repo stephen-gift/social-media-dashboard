@@ -1,4 +1,4 @@
-import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
+import { Box, filter, Flex, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { OverviewProps } from "../../containers/Homepage/Overview";
 import SMDActionIcon from "./SMDActionIcon";
@@ -20,6 +20,11 @@ const SMDOverviewCard = ({
       w="full"
       minW="300px"
       bgColor={useColorModeValue("light.300", "dark.300")}
+      _hover={{
+        filter: "brightness(90%)",
+        _dark: { filter: "brightness(120%)" },
+      }}
+      cursor="pointer"
       borderRadius="lg"
       p={5}
       gap={3}

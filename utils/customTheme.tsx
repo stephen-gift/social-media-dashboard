@@ -85,7 +85,17 @@ const baseStyle = definePartsStyle({
     _checked: { bg: "switch.50" },
   },
   track: {
-    bgGradient: "linear(to-r, switch.100, switch.200)",
+    px: "2px",
+    py: "2px",
+
+    _light: {
+      bg: "gray.300",
+      _hover: { bgGradient: "linear(to-r, switch.100, switch.200)" },
+    },
+    _dark: {
+      bgGradient: "linear(to-r, switch.100, switch.200)",
+      _hover: { bgGradient: "linear(to-r, switch.100, switch.200)" },
+    },
   },
 });
 

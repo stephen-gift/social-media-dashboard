@@ -29,6 +29,11 @@ const SMDSummaryCard = ({
         justifyContent="center"
         position="relative"
         overflow="hidden"
+        _hover={{
+          filter: "brightness(90%)",
+          _dark: { filter: "brightness(120%)" },
+        }}
+        cursor='pointer'
       >
         <Box
           position="absolute"
