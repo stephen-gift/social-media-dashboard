@@ -6,7 +6,8 @@ import {
   FaInstagram,
   FaYoutube,
 } from "react-icons/fa";
-import { Icon, Text } from "@chakra-ui/react";
+import InstagramIcon from "../assets/images/icon-instagram.png";
+import { Icon, Image, Text } from "@chakra-ui/react";
 
 export const UpIcon = () => {
   return <Icon as={FaCaretUp} color="success.100" />;
@@ -23,10 +24,11 @@ export const SMDTwitterIcon = () => {
 };
 export const SMDInstagramIcon = () => {
   return (
-    <Icon
-      as={FaInstagram}
-      bgGradient="linear(to-r, instagram.100, instagram.200)"
-    />
+    // <Icon
+    //   as={FaInstagram}
+    //   bgGradient="linear(to-r, instagram.100, instagram.200)"
+    // />
+    <Image src={InstagramIcon.src} alt="instagram" w="20px" h="20px" />
   );
 };
 export const SMDYoutubeIcon = () => {
