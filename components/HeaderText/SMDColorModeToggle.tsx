@@ -9,14 +9,14 @@ import {
 import React from "react";
 
 const SMDColorModeToggle = () => {
-  const { toggleColorMode } = useColorMode();
+  const { toggleColorMode,colorMode } = useColorMode();
 
   return (
     <Flex justifyContent="center" alignItems="center" gap={3}>
       <Text as="small" color={useColorModeValue("light.500", "dark.500")}>
         Dark Mode
       </Text>
-      <Switch size="lg" onChange={toggleColorMode} />
+      <Switch size="lg" onChange={toggleColorMode} isChecked={colorMode==='light'} />
     </Flex>
   );
 };
