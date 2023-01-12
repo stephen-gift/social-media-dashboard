@@ -15,24 +15,26 @@ const SMDFollowers = ({
           <Box key={d.id}>
             {followers ? (
               <Flex flexDir="column" alignItems="center">
-                <Heading color={useColorModeValue("light.500", "dark.500")}>
+                <Heading color="light.500" _dark={{ color: "dark.500" }}>
                   {noFollowers}
                 </Heading>
                 <Text
                   as="small"
-                  color={useColorModeValue("light.400", "dark.400")}
+                  color="light.400"
+                  _dark={{ color: "dark.400" }}
                 >
                   FOLLOWERS
                 </Text>
               </Flex>
             ) : (
               <Flex flexDir="column" alignItems="center">
-                <Heading color={useColorModeValue("light.500", "dark.500")}>
+                <Heading color="light.500" _dark={{ color: "dark.500" }}>
                   {noSubscribers}
                 </Heading>
                 <Text
                   as="small"
-                  color={useColorModeValue("light.400", "dark.400")}
+                  color="light.400"
+                  _dark={{ color: "dark.400" }}
                 >
                   SUBSCRIBERS
                 </Text>
