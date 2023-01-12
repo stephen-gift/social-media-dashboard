@@ -21,7 +21,7 @@ const SMDSummaryCard = ({
     <>
       <Flex
         w="100%"
-        minW="300px"
+        minW="150px"
         bgColor={useColorModeValue("light.300", "dark.300")}
         borderRadius="lg"
         p={14}
@@ -33,7 +33,7 @@ const SMDSummaryCard = ({
           filter: "brightness(90%)",
           _dark: { filter: "brightness(120%)" },
         }}
-        cursor='pointer'
+        cursor="pointer"
       >
         <Box
           position="absolute"

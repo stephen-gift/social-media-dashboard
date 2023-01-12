@@ -12,7 +12,12 @@ const SMDColorModeToggle = () => {
   const { toggleColorMode, colorMode } = useColorMode();
 
   return (
-    <Flex justifyContent="center" alignItems="center" gap={3}>
+    <Flex
+      justifyContent={{ base: "space-between", lg: "center" }}
+      alignItems="center"
+      gap={3}
+      w={{ base: "full", lg: "initial" }}
+    >
       <Text as="small" color={useColorModeValue("light.500", "dark.500")}>
         Dark Mode
       </Text>

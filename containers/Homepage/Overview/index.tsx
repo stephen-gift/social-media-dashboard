@@ -26,7 +26,7 @@ const SMDOverview = () => {
           >
             <Heading>Overview - Today</Heading>
 
-            <SimpleGrid columns={4} w="full" spacing={6}>
+            <SimpleGrid columns={{ lg: 4, base: 1 }} w="full" spacing={6}>
               <SMDOverviewCard
                 topAction={d.topAction.fbPV}
                 facebook

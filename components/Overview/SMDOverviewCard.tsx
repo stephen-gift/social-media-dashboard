@@ -18,7 +18,7 @@ const SMDOverviewCard = ({
     <Flex
       flexDir="column"
       w="full"
-      minW="300px"
+      minW="150px"
       bgColor={useColorModeValue("light.300", "dark.300")}
       _hover={{
         filter: "brightness(90%)",

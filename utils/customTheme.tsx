@@ -101,11 +101,21 @@ const baseStyle = definePartsStyle({
 
 export const switchTheme = defineMultiStyleConfig({ baseStyle });
 
+const breakpoints = {
+  sm: "320px",
+  md: "768px",
+  lg: "960px",
+  xl: "1200px",
+  "2xl": "1536px",
+};
+
 const customTheme = extendTheme({
   components: { Switch: switchTheme },
+
   colors,
   config,
   styles,
+  breakpoints,
 });
 
 export default customTheme;
