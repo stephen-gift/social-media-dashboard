@@ -1,4 +1,4 @@
-import { Divider, Flex } from "@chakra-ui/react";
+import { Divider, Flex, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 import { SMDColorModeToggle, SMDHeaderText } from "../../../components";
 
@@ -8,10 +8,13 @@ const SMDHeader = () => {
       justifyContent={{ lg: "space-between", base: "center" }}
       alignItems={{ lg: "center", base: "flex-start" }}
       flexDir={{ lg: "row", base: "column" }}
-      gap={{lg:'0',base:'15px'}}
+      gap={{ lg: "0", base: "15px" }}
     >
       <SMDHeaderText />
-      <Divider display={{lg:'none'}}/>
+      <Divider
+        display={{ lg: "none" }}
+        // bgColor={useColorModeValue("light.500", "dark.500")}
+      />
       <SMDColorModeToggle />
     </Flex>
   );
