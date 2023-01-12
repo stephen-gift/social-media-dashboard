@@ -65,12 +65,32 @@ const styles = {
   }),
 };
 
+import { switchAnatomy } from "@chakra-ui/anatomy";
+import { createMultiStyleConfigHelpers } from "@chakra-ui/react";
+
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(switchAnatomy.keys);
+
+const baseStyle = definePartsStyle({
+  container: {
+    // ...
+  },
+  thumb: {
+    bg: "dark.300",
+    _checked: { bg: "switch.50" },
+  },
+  track: {
+    bgGradient: "linear(to-r, switch.100, switch.200)",
+  },
+});
+
+export const switchTheme = defineMultiStyleConfig({ baseStyle });
+
 const customTheme = extendTheme({
+  components: { Switch: switchTheme },
   colors,
   config,
   styles,
 });
 
 export default customTheme;
-
-
