@@ -7,6 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import InstagramIcon from "../assets/images/icon-instagram.png";
+import YoutubeIcon from "../assets/images/icon-youtube.png";
 import { Icon, Image, Text } from "@chakra-ui/react";
 
 export const UpIcon = () => {
@@ -32,5 +33,8 @@ export const SMDInstagramIcon = () => {
   );
 };
 export const SMDYoutubeIcon = () => {
-  return <Icon as={FaYoutube} color="youtube.100" />;
+  return (
+    // <Icon as={FaYoutube} color="youtube.100" />;
+    <Image src={YoutubeIcon.src} alt="youtube" w="20px" h="20px" />
+  );
 };
